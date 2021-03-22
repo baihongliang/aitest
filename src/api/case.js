@@ -16,6 +16,12 @@ const cases = {
     },
     deleteCase(params){
         return axios.delete('/testCase/'+params.caseId, params)
+    },
+    editCase(params){
+        return axios.put('/testCase/', params)
+    },
+    createTask(params){
+        return axios.post('/task/', params)
     }
 }
 export default cases
